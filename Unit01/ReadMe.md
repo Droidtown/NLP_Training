@@ -34,6 +34,8 @@ python3 -m pip install ArticutAPI
 
 點擊 \[複製 API 金鑰\] 鈕，即可取得金鑰。
 
+若 **username** 和 **apikey** 兩欄為空字串，則預設會使用每小時 2000 字的公用字數額度。
+
 ### **基本操作**範例如下：(請將 username 更換為您的 Articut 帳號Email)
 
 ![](./img/unit01_pic02.png)
