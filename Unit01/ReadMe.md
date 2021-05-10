@@ -1,12 +1,14 @@
 # Week01 ArticutAPI 套件介紹
 
 ### 前言
-Articut 是一套「純台灣製造」的中文 NLP 系統。它能同時處理中文斷詞、詞性標記以及命名實體標記的套件。相較於 Jieba 分詞、Stanford CoreNLP 以及中研院的 CKIP 或是其它基於簡體字的語料訓練出來的 HanLP、哈工大LTP…等等方案，Articut 具有功能完備、應用靈活及對新詞的接受度高且更新迅速的特點。  
+Articut 是一套「純台灣製造」的中文 NLP 系統。它能同時處理中文斷詞、詞性標記以及命名實體標記的套件。相較於 Jieba 分詞、Stanford CoreNLP 以及中研院的 CKIP 或是其它基於簡體字的語料訓練出來的 HanLP、哈工大LTP…等等方案，Articut 具有功能完備、應用靈活及對新詞的接受度高且更新迅速的特點。
+
+Articut 需在 Python3.6 以上的環境中運作！
 
 ### 安裝 ArticutAPI
 ArticutAPI 則是可透過 Python 的套件系統進行安裝並操作 Articut的 API 介面。只要在電腦裡下指令：
 ```bash
-pip install ArticutAPI
+pip3 install ArticutAPI
 ```
 即可完成安裝。
 
