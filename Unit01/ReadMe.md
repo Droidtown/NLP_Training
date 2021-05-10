@@ -7,9 +7,17 @@ Articut 需在 Python3.6 以上的環境中運作！
 
 ### 安裝 ArticutAPI
 ArticutAPI 則是可透過 Python 的套件系統進行安裝並操作 Articut的 API 介面。只要在電腦裡下指令：
+
 ```bash
 pip3 install ArticutAPI
 ```
+
+或
+
+```bash
+python3 -m pip install ArticutAPI
+```
+
 即可完成安裝。
 
 ### 註冊並取得教學用 API 金鑰
@@ -19,8 +27,6 @@ pip3 install ArticutAPI
 1. 授課教師姓名
 2. 授課教師 email (必需和前述註冊帳號一致)
 3. 授課大綱
-
-  
 
 經查証後，即可取得「一個月」無字數限制之 Articut 教學用金鑰。 再登入 [https://api.droidtown.co](https://api.droidtown.co/)後，即能在以下畫面取得 Articut NLP 系統的操作金鑰：
 ![](./img/unit01_pic01.png) 
@@ -69,9 +75,9 @@ Articut Level斷詞的深度。數字愈小，切得愈細。比如說「小紅�
 ![](./img/unit01_pic06.png) 
   
 
-點擊畫面右方的 \[Code\] 找到 \[Download ZIP\] 的選項，下載壓縮檔，然後將它解壓縮後，放在
+點擊畫面右方的 \[Code\] 找到 \[Download ZIP\] 的選項，下載壓縮檔，然後將它解壓縮後，放在 demo01-03.py 的旁邊備用。
 ![](./img/unit01_pic07.png) 
-demo01-03.py 的旁邊備用。
+
 
 由於稍後我們要示範的語料是「體育運動」類的，而剛好在ArticutAPI-master 的 Public_UserdefinedDict 內有幾個球隊名稱的領域字典可以使用。我們將這幾個領域字典讀取出來，並結合成單一一個字典檔，和要處理的文本一起傳給 Articut 以便增加結果的正確性。
 
