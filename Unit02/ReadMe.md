@@ -4,7 +4,7 @@
 
 ### TF-IDF 比較 (沒有利用 POS 資訊時)
 
-延續前例，我們使用 **Articut** 內建的 **analyse** 工具包裡的 **extract_tags()** 函式來計算 **TF-IDF**。
+延續 Unit01 中棒球和籃球的例子，我們使用 **Articut** 內建的 **analyse** 工具包裡的 **extract_tags()** 函式來計算 **TF-IDF**。
 
 ![](./img/unit02_pic01.png)
 
