@@ -44,8 +44,8 @@ def lengthSimilarity(counter01, counter02):
 
 
 if __name__ == "__main__":
-    username = "peter.w@droidtown.co"
-    apikey   = "pEWjfx317g!zhLnU6W^hnWeyirr&JR6"
+    username = "" #這裡填入您在 https://api.droidtown.co 使用的帳號 email。若使用空字串，則預設使用每小時 2000 字的公用額度。
+    apikey   = "" #這裡填入您在 https://api.droidtown.co 登入後取得的 api Key。若使用空字串，則預設使用每小時 2000 字的公用額度。
 
     articut = Articut(username, apikey)
 
