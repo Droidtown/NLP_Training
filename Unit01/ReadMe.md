@@ -22,7 +22,7 @@ python3 -m pip install ArticutAPI
 
 ### 註冊並取得教學用 API 金鑰
 
-卓騰語言科技免費提供一個月無字數限制之 Articut 教學用金鑰給中華民國教育部承認之教學單位授課使用。請先至 [https://api.droidtown.co](https://api.droidtown.co/) 完成註冊，並來信 [info@droidtown.co](mailto:info@droidtown.co) 載明：
+卓騰語言科技免費提供一個月無字數限制之 Articut 教學用金鑰給中華民國教育部承認之教學單位授課教師使用。請先至 [https://api.droidtown.co](https://api.droidtown.co/) 完成註冊，並來信 [info@droidtown.co](mailto:info@droidtown.co) 載明：
 
 1. 授課教師姓名
 2. 授課教師 email (必需和前述註冊帳號一致)
