@@ -16,6 +16,6 @@ Gold.json 則是標準答案。
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
+    AML_News-->Articut --> VerbLIST_A;
+    Other_News-->Articut--> VerbLIST-B;
 ```
