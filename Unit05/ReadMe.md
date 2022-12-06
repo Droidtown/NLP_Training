@@ -17,5 +17,5 @@ Gold.json 則是標準答案。
 ```mermaid
 graph TD;
     A-->B;
-    A--C;
+    A-->C;
 ```
