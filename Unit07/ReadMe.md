@@ -57,7 +57,7 @@ Gold.json 則是標準答案。
   - 抽詞模型的產生與應用：
 ![](./img/flowchart_02.png)
     - 說明：
-        - 模型目標是要抽出人名，因此首先找出文本中所有「含有人名」的句子 K，再將這些句子都建入 Loki NLU 系統中。(此步驟可用人力逐句挑選含有犯罪嫌疑人之句子，並以人力建入 Loki 模型中，或直接執行 `Loki/src/)
+        - 模型目標是要抽出人名，因此首先找出文本中所有「含有人名」的句子 K，再將這些句子都建入 Loki NLU 系統中。(此步驟可用人力逐句挑選含有犯罪嫌疑人之句子，並以人力建入 Loki 模型中，或直接執行 `Loki/src/loki_utterance_inserter.py`)
         - 在 Loki NLU 系統中將所有可勾選的詞彙元素都勾選，使其成為變數以最大化該訓練句的泛化能力。
         - 在 Loki NLU 系統中將所有近義的動詞加以勾選，使其最大化該訓練句的泛化能力。
         - 產生抽詞模型、部署該模型並下載範例程式。
@@ -84,3 +84,25 @@ Gold.json 則是標準答案。
 
   - 結果評估：
       - 以 Gold.json 為標準，假設 Gold 中有 M 個人名，而 result.json 中找到 N 個和 Gold.json 重覆的人名，則記為將 N 除以 M 做為結果。若 N 中有出現「不在 Gold.json」中的人名，則每出現一個扣 0.02 * Gold.json 的總數。扣至 0 為止。
+
+  - 附件
+      - 檔案說明
+
+```
+├── Loki
+│   ├── AML_run
+│   │   ├── AML_Name_Extractor.py  #本單元主程式
+│   │   ├── AML_run.py  #Loki NLU 專案 AML_run 主程式，用以存取 intent 內模型
+│   │   ├── MODEL_AML.json  #AML_News 詞彙模型
+│   │   ├── MODEL_OTHER.json #Other_News 詞彙模型
+│   │   ├── Similarity.py  #計算相似度的工具程式
+│   │   ├── account.info  #帳號資訊
+│   │   └── intent  #Loki 意圖模型程式檔
+│   └── ref  #Loki 匯入用 .ref 檔
+├── ReadMe.md
+├── corpus  #語料
+├── img  #影像圖檔
+└── src  #其它工具程式
+    └── loki_utterance_inserter.py
+```
+      
