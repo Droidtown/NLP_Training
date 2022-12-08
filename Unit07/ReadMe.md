@@ -52,7 +52,7 @@ Gold.json 則是標準答案。
         print(similarityDICT)
         if similarityDICT["aml"] > similarityDICT["other"]:
             newsLIST.append(t)
-        ```
+```
 
   - 抽詞模型的產生與應用：
 ![](./img/flowchart_02.png)
@@ -64,6 +64,24 @@ Gold.json 則是標準答案。
 
   - 系統操作：
     - 首先利用 [分類模型] 判定該文本是否屬於**違反 AML 新聞**，若是，則進入 [抽詞模型]，並透過 [抽詞模型] 將人名抽出並另存於 result.json 中；若否，則忽略該文本。
+    - 程式碼在 `Loki/AML_run/AML_Name_Extractor.py` 中，說明如下：
+
+```python
+    #人名擷取結果：
+    news2amlLIST = []
+    for n in newsLIST:
+        news2amlLIST.extend(news2aml(n.replace("、", "與")))
+    news2amlLIST = sorted(list(set(news2amlLIST)))
+    print("結果：{}".format(news2amlLIST))
+
+    #正解：
+    with open("../../corpus/Gold.json", encoding="utf-8") as jFILE:
+        goldLIST = sorted(json.load(jFILE))
+
+    print("正解：{}".format(goldLIST))
+```
+
+
 
   - 結果評估：
       - 以 Gold.json 為標準，假設 Gold 中有 M 個人名，而 result.json 中找到 N 個和 Gold.json 重覆的人名，則記為將 N 除以 M 做為結果。若 N 中有出現「不在 Gold.json」中的人名，則每出現一個扣 0.02 * Gold.json 的總數。扣至 0 為止。
