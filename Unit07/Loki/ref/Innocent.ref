@@ -1,0 +1,375 @@
+{
+    "language": "zh-tw",
+    "type": "basic",
+    "version": {
+        "atk": "v260",
+        "intent": "1.0"
+    },
+    "user_defined": {},
+    "utterance": {
+        "記者鄧木卿台中報導": {
+            "id": "5c6e346e-38f9-4c71-9837-08b39cf46fe9",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "記者",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_person",
+                    "text": "鄧木卿",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "LOCATION",
+                    "text": "台中",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "報告",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "稟報",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉報",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "通報",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢舉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "稟告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "通信",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "報導家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "追訪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "專訪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報導了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "同玩節",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報導過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報導元",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投書",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "報導",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "檢察官黃珮瑜接手偵辦": {
+            "id": "f7e6642a-8aa1-40fc-8ebb-f4b0d5c4aaea",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "檢察官",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_person",
+                    "text": "黃珮瑜",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "接下",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接下來",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接任",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接住",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接到",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接受",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接掌",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接收",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接替",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接案",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接活",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接獲",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接班",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接管",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "接納",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "包攬",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "擔當",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "收存",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "收納",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "收養",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "錄取",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "錄用",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "執掌",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "入主",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "接辦",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "接棒",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "承接",
+                            "level": "word2vec",
+                            "checked": true
+                        }
+                    ],
+                    "text": "接手",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "偵察",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "偵查",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "偵破",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "查辦",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "嚴查",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "徹查",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "暗訪",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "查訪",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "清查",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "調查",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "追問",
+                            "level": "tier_2",
+                            "checked": true
+                        },
+                        {
+                            "text": "追查",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "查察",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "查緝",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "追緝",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "審理",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "檢肅",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "查處",
+                            "level": "word2vec",
+                            "checked": true
+                        }
+                    ],
+                    "text": "偵辦",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        }
+    }
+}
