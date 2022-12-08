@@ -34,22 +34,22 @@ if __name__== "__main__":
 
     #文本分類
 
-      #產生相關與無關 ContentWord 模型
-    status = generateModel("aml")
-    print("GenerateModel => {}".format(status))
-    status = generateModel("other")
-    print("GenerateModel => {}".format(status))
+      ##產生相關與無關 ContentWord 模型
+    #status = generateModel("aml")
+    #print("GenerateModel => {}".format(status))
+    #status = generateModel("other")
+    #print("GenerateModel => {}".format(status))
 
-      #計算相似度
-    newsLIST = []
-    with open("../../corpus/Test_News.json", encoding="utf-8") as jFILE:
-        testLIST = json.load(jFILE)
-    for t in testLIST:
-        contentWordDICT = getContentWord(t)
-        similarityDICT = getSimilarity(contentWordDICT)
-        print(similarityDICT)
-        if similarityDICT["aml"] > similarityDICT["other"]:
-            newsLIST.append(t)
+      ##計算相似度
+    #newsLIST = []
+    #with open("../../corpus/Test_News.json", encoding="utf-8") as jFILE:
+        #testLIST = json.load(jFILE)
+    #for t in testLIST:
+        #contentWordDICT = getContentWord(t)
+        #similarityDICT = getSimilarity(contentWordDICT)
+        #print(similarityDICT)
+        #if similarityDICT["aml"] > similarityDICT["other"]:
+            #newsLIST.append(t)
 
     #人名擷取結果：
     news2amlLIST = []

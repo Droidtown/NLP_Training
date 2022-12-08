@@ -44,6 +44,7 @@
 
 from requests import post
 from requests import codes
+import json
 import math
 import re
 try:
@@ -53,10 +54,12 @@ except:
     from .intent import Loki_AML
     from .intent import Loki_Innocent
 
+with open("account.info", encoding="utf-8") as jFILE:
+    accountDICT = json.load(jFILE)
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
-USERNAME = "peter.w@droidtown.co"
-LOKI_KEY = "XJAOH7R3iLOrMQ$uCeuG6fMvL_%6&4k"
+USERNAME = accountDICT["username"]
+LOKI_KEY = accountDICT["aml_run"]
 # 意圖過濾器說明
 # INTENT_FILTER = []        => 比對全部的意圖 (預設)
 # INTENT_FILTER = [intentN] => 僅比對 INTENT_FILTER 內的意圖

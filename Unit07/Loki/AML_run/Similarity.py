@@ -8,8 +8,9 @@ import math
 import os
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-
-G_atk = Articut(username="peter.w@droidtown.co", apikey="Jp$Jnnh1KCGEmHvzJ3wmiCXoA4nraNp")
+with open("account.info", encoding="utf-8") as jFILE:
+    accountDICT = json.load(jFILE)
+G_atk = Articut(username=accountDICT["username"], apikey=accountDICT["articut_key"])
 G_modelDICT = {
     "aml": "{}/MODEL_AML.json".format(BASE_PATH),
     "other": "{}/MODEL_OTHER.json".format(BASE_PATH),
@@ -24,7 +25,8 @@ def getContentWord(inputSTR):
         if result["msg"] == "Insufficient word count balance.":
             print("您的帳號剩餘可用字數不足！無法處理此次呼叫。")
         elif result["msg"] == "Your input_str is too long (over 2000 characters.)":
-            print("您的文本長度超過免費額度的「每次最多 2000 字」，請用付費帳號以避免此問題。")
+            print("""您的文本長度超過免費額度的「每次最多 2000 字」，請用付費帳號以避免此問題。
+                  若您是為了教學而使用本程式，歡迎和我們聯絡以取得教學用支援帳號: info@droidtown.co""")
         return None
     else:
         contentWordLIST = G_atk.getContentWordLIST(result)
