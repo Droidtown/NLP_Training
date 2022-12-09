@@ -1,7 +1,7 @@
 ## **Unit07: 實作：進階抽詞任務**
 
 
-在新聞報導的文本裡，有許多違法犯罪事件的新聞。其中，涉及諸如走私、廢棄物清理、政府採購法…等行為的犯罪人 ([參照：洗錢防制法 (AML)](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0380131))，是會被列為需要特別注意的名單。
+在新聞報導的文本裡，有許多違法犯罪事件的新聞。其中，涉及諸如走私、廢棄物清理、政府採購法…等行為的犯罪人 ([參照：洗錢防制法 (AML)](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=G0380131)；[調查局：洗錢態樣說明](https://www.mjib.gov.tw/EditPage/?PageID=564dcbaf-1d4e-45a9-bf1e-a26ea488bd76))，是會被列為需要特別注意的名單。
 
 本單元的任務，就是設計並實作一個 NLP 模型，它可以產生的「特別注意名單」。
 
