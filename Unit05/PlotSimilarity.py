@@ -5,12 +5,8 @@
 from Bio import pairwise2
 #from Bio.pairwise2 import format_alignment
 
-try:
-    import sys
-    sys.path.append("../..")
-    from ArticutAPI import Articut
-except:
-    from ArticutAPI import Articut
+
+from ArticutAPI import Articut
 
 username = "peter.w@droidtown.co"
 apikey = "Jp$Jnnh1KCGEmHvzJ3wmiCXoA4nraNp"
@@ -69,15 +65,15 @@ if __name__ == "__main__":
     當天不要早上一早去投票，要下午三點去投票，投完票，
     順便看開票，這樣在四點，開出來的票，就會比較正確，
     看他們正確計票，這是四年前跟二年前去做選務人員心得。"""
-    
+
     text08 = """我是之前幫您審核銀行車貸楊經理，繳滿3期，
     可拿80萬月付7725元週轉金！不看遲繳負債，免財力，
     三天撥款！速賴/☎0987-113367"""
-    
+
     text09 = """我之前幫您審核林經理、您的評分通過、
     靈活金200萬月付3萬，機車可50萬，免財力不看負債遲繳、
     詳情洽：0906615822賴同手機"""
-    
+
     text10 = """Hi! 我是台新綜合證券投信的  李鈺婷  ,有急事找你 麻煩加我一下賴ID：lyt8821"""
     text11 = """hi 我是元大綜合證券投信的 林淑怡  電話聯絡過您多次 有急事找你麻煩加我一下賴ID：lsy1567"""
 
