@@ -45,39 +45,6 @@ def lengthSimilarity(count1DICT, count2DICT):
     lenc2 = sum(iter(count2DICT.values()))
     return min(lenc1, lenc2) / float(max(lenc1, lenc2))
 
-def counterCombination(counterDICT, N=100):
-    # Get all combinations of counterDICT and length 2
-    combLIST = combinations(counterDICT, 2)
-    resultDICT = {}
-    for i, comb in enumerate(combLIST):
-        count1DICT, count2DICT = _normalization(counterDICT[comb[0]], counterDICT[comb[1]], N)
-        resultDICT["{}_{}".format(i, comb[0])] = count1DICT
-        resultDICT["{}_{}".format(i, comb[1])] = count2DICT
-    return resultDICT
-
-def _normalization(count1DICT, count2DICT, N=100):
-    if len(count1DICT) <= N and len(count2DICT) <= N:
-        newcount1DICT = {}
-        for k, v in count1DICT.items():
-            if k in count2DICT:
-                maxV = max(v, count2DICT[k])
-                if maxV == 1:
-                    count2DICT.pop(k)
-                    pass
-                elif maxV - v == 0:
-                    newcount1DICT[k] = v - count2DICT[k]
-                    count2DICT.pop(k)
-                else:
-                    count2DICT[k] = maxV - v
-            else:
-                newcount1DICT[k] = v
-        newcount2DICT = count2DICT
-    else:    # Get Set difference directly.
-        newcount1DICT = value = {k: count1DICT[k] for k in set(count1DICT) - set(count2DICT)}
-        newcount2DICT = value = {k: count2DICT[k] for k in set(count2DICT) - set(count1DICT)}
-
-    return newcount1DICT, newcount2DICT
-
 def multiModelSimilarity(modelCountDICT, unknownCountDICT):
     '''
     多模型相似度計算
@@ -117,11 +84,11 @@ if __name__ == "__main__":
 
 
     # 將 KNOWLEDGE_NBA_Teams.json、 KNOWLEDGE_MLB_Teams.json 和 KNOWLEDGE_Football_Teams.json 兩個體育類的字典讀取出來，合併成 mixedDICT 以後，寫入 mixedDICT.json 檔
-    with open("./KNOWLEDGE_NBA_Teams.json", encoding="utf-8") as f:
+    with open("./ArticutAPI-master/Public_UserDefinedDict/KNOWLEDGE_NBA_Teams.json", encoding="utf-8") as f:
         nbaDICT = json.loads(f.read())
-    with open("./KNOWLEDGE_MLB_Teams.json", encoding="utf-8") as f:
+    with open("./ArticutAPI-master/Public_UserDefinedDict/KNOWLEDGE_MLB_Teams.json", encoding="utf-8") as f:
         mlbDICT = json.loads(f.read())
-    with open("./KNOWLEDGE_Football_Teams.json", encoding="utf-8") as f:
+    with open("./ArticutAPI-master/Public_UserDefinedDict/KNOWLEDGE_Football_Teams.json", encoding="utf-8") as f:
         ftbDICT = json.loads(f.read())
 
     mixedDICT = {**nbaDICT, **mlbDICT, **ftbDICT}
