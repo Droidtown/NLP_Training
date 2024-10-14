@@ -8,8 +8,8 @@ from Bio import pairwise2
 
 from ArticutAPI import Articut
 
-username = "peter.w@droidtown.co"
-apikey = "Jp$Jnnh1KCGEmHvzJ3wmiCXoA4nraNp"
+username = ""
+apikey = ""
 
 articut = Articut(username=username, apikey=apikey)
 
